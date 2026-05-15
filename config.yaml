@@ -1,0 +1,569 @@
+# ═══════════════════════════════════════════════════════════════════
+# CHANDAN KUMAR — PORTFOLIO WEBSITE CONFIGURATION
+# ═══════════════════════════════════════════════════════════════════
+#
+# HOW TO USE THIS FILE:
+#   • Everything inside quote marks "like this" is yours to change.
+#   • Lines starting with # are comments — they're ignored by Hugo.
+#   • After you save (commit) this file, your site auto-rebuilds.
+#   • IMPORTANT: Keep the indentation (leading spaces) exactly as-is.
+#     Moving text left or right will break the site.
+#
+# QUICK EDIT LOCATIONS:
+#   Your name/headline ......... search for "HERO SECTION"
+#   Your bio ................... search for "ABOUT SECTION"
+#   Jobs/companies ............. search for "EXPERIENCE SECTION"
+#   Case studies ............... search for "KEY ENGAGEMENTS"
+#   Education/certs ............ search for "EDUCATION SECTION"
+#   Awards/recognition ......... search for "ACHIEVEMENTS SECTION"
+#   Contact details ............ search for "CONTACT SECTION"
+#
+# ═══════════════════════════════════════════════════════════════════
+
+# ─── SITE-WIDE SETTINGS ────────────────────────────────────────────
+# EDIT: Replace YOUR-GITHUB-USERNAME with your actual GitHub username.
+# Example: if your GitHub username is "chandankumar", set:
+#   baseURL: "https://chandankumar.github.io/"
+baseURL: "https://chandan-kumar-official.github.io/"
+
+languageCode: "en-us"
+
+# EDIT: This appears in the browser tab and search results.
+title: "Chandan Kumar | Strategy & Operations Consultant"
+
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allows HTML in your markdown content
+
+# ─── TOP NAVIGATION BAR ────────────────────────────────────────────
+# EDIT: Change "name" to rename the nav links visitors see.
+# Do NOT change "url" — those are internal anchors.
+Menus:
+  main:
+    - identifier: about
+      name: About
+      title: About Me
+      url: /#about
+      weight: 1
+    - identifier: experience
+      name: Experience
+      title: Work Experience
+      url: /#experience
+      weight: 2
+    - identifier: projects
+      name: Engagements
+      title: Key Engagements
+      url: /#projects
+      weight: 3
+    - identifier: education
+      name: Education
+      title: Education & Certifications
+      url: /#education
+      weight: 4
+    - identifier: achievements
+      name: Awards
+      title: Achievements & Recognition
+      url: /#achievements
+      weight: 5
+    - identifier: contact
+      name: Contact
+      title: Get In Touch
+      url: /#contact
+      weight: 6
+
+
+# ═══════════════════════════════════════════════════════════════════
+# ALL YOUR CONTENT LIVES BELOW THIS LINE
+# ═══════════════════════════════════════════════════════════════════
+params:
+  # EDIT: Shown in search engine previews and social shares
+  title: "Chandan Kumar"
+  description: "Strategy & Operations Consultant | Technology Advisory | Supply Chain Transformation"
+  favicon: "/images/favicon.png"
+
+  useBootstrapCDN: false
+  animate: true  # Subtle scroll-in animations. Set to false to disable.
+
+  # ─── APPEARANCE ──────────────────────────────────────────────────
+  theme:
+    disableThemeToggle: false   # false = show the light/dark mode toggle button
+    defaultTheme: "light"       # EDIT: "light" or "dark" — default on first visit
+
+  # ─── NAVIGATION BAR ──────────────────────────────────────────────
+  navbar:
+    align: ms-auto
+    # EDIT: Your name/logo shown top-left in the nav bar
+    brandName: "Chandan Kumar"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 1. HERO SECTION — First thing visitors see
+  # ═══════════════════════════════════════════════════════════════════
+  hero:
+    enable: true
+
+    # EDIT: Small greeting line above your name
+    intro: "Hello, I'm"
+
+    # EDIT: Your full name (large heading)
+    title: "Chandan Kumar"
+
+    # EDIT: Your professional headline — shown directly under your name
+    subtitle: "Strategy & Operations Consultant"
+
+    # EDIT: A 1–2 sentence value statement.
+    # The ">" means the text wraps into one paragraph — just edit the lines below.
+    content: >
+      I help organisations navigate complex transformations — from digital strategy
+      to operational excellence. With deep expertise in Technology Advisory and
+      Supply Chain, I turn ambiguous challenges into structured, actionable roadmaps
+      that deliver measurable results.
+
+    # Your profile photo.
+    # HOW TO ADD YOUR PHOTO:
+    #   1. Upload your photo to the static/images/ folder in GitHub
+    #   2. Name the file "hero.jpg" (or update the path below to match your filename)
+    image: /images/hero.jpg
+
+    bottomImage:
+      enable: true
+
+    roundImage: true   # true = circular crop, false = square with rounded corners
+
+    # ─── PRIMARY CTA BUTTON ────────────────────────────────────────
+    button:
+      enable: true
+      # EDIT: Button label text
+      name: "Download Resume"
+      # EDIT: Path to your resume PDF.
+      # HOW TO ADD YOUR RESUME:
+      #   1. Upload your PDF to the static/ folder in GitHub
+      #   2. Name it "Chandan_Kumar_Resume.pdf" (or update this path)
+      url: "/Chandan_Kumar_Resume.pdf"
+      download: true
+      newPage: true
+
+    # ─── SOCIAL / CONTACT ICON LINKS ───────────────────────────────
+    socialLinks:
+      fontAwesomeIcons:
+        # LinkedIn icon
+        - icon: fab fa-linkedin
+          # EDIT: Your LinkedIn profile URL
+          url: "https://www.linkedin.com/in/chandan-kumar-6971b0a9/"
+
+        # Email icon (opens visitor's email client)
+        - icon: fas fa-envelope
+          # EDIT: Your email address
+          url: "mailto:chandan.im.official@gmail.com"
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 2. ABOUT SECTION
+  # ═══════════════════════════════════════════════════════════════════
+  about:
+    enable: true
+    title: "About Me"
+
+    # EDIT: Path to your About photo (can be the same as hero.jpg)
+    image: "/images/hero.jpg"
+
+    # EDIT: Your bio paragraphs.
+    # The "|-" preserves line breaks. Keep the 6-space indent on each line.
+    content: |-
+      I am a Strategy & Operations Consultant with over a decade of experience advising
+      Fortune 500 companies and high-growth organisations on technology-enabled
+      transformation and supply chain optimisation. I bring a practitioner's lens to
+      strategy work — I don't just recommend change, I help clients build the capability
+      to sustain it.
+
+      My work spans the full consulting lifecycle: opportunity identification, business
+      case development, programme design, stakeholder management, and value realisation.
+      Whether leading a global ERP rollout or redesigning a last-mile logistics network,
+      I focus on outcomes that are measurable, durable, and owned by the client.
+
+      I am currently open to senior consulting and advisory roles across the UK, Europe,
+      and internationally.
+
+    # ─── CORE COMPETENCIES TAG CLOUD ─────────────────────────────
+    # EDIT: Add, remove, or rename items in this list.
+    # HOW TO ADD A SKILL: copy one "- " line and paste below it, change the text.
+    skills:
+      enable: true
+      title: "Core Competencies:"
+      items:
+        # ── Strategy ──────────────────────────────────────────────
+        - "Strategic Planning & Roadmapping"
+        - "Business Case Development"
+        - "Operating Model Design"
+        - "Digital Transformation"
+        # ── Operations ────────────────────────────────────────────
+        - "Supply Chain Optimisation"
+        - "Process Re-engineering"
+        - "Programme & Change Management"
+        - "Lean / Six Sigma"
+        # ── Tools & Analysis ──────────────────────────────────────
+        - "Financial Modelling (Excel / Power BI)"
+        - "Tableau & PowerPoint"
+        - "SAP / Oracle ERP Advisory"
+        - "Executive Stakeholder Communication"
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 3. EXPERIENCE SECTION — Work history timeline
+  # ═══════════════════════════════════════════════════════════════════
+  #
+  # HOW TO ADD A NEW JOB:
+  #   1. Copy everything from one "      - job: ..." block to the blank line
+  #      before the next "      - job:"
+  #   2. Paste it below the last entry (keep the same indentation)
+  #   3. Update the text in quotes
+  #
+  # HOW TO ADD BULLET POINTS in the "content" field:
+  #   Start each bullet with: "          - Your text here"
+  #   (that's 10 spaces, then a dash, then a space)
+  # ═══════════════════════════════════════════════════════════════════
+  experience:
+    enable: true
+    items:
+
+      # ── JOB 1 — Most recent first ─────────────────────────────────
+      - job: "Senior Consultant — Strategy & Operations"
+        # EDIT: Company name
+        company: "Global Management Consulting Firm"
+        # EDIT: Company website (or leave as "" to hide the link)
+        companyUrl: ""
+        # EDIT: Employment dates
+        date: "Mar 2021 – Present"
+        featuredLink:
+          enable: false
+        info:
+          enable: true
+          # EDIT: Short badge text (employment type / location)
+          content: "Full-time | London, UK"
+        # EDIT: Role description and bullet-point achievements.
+        # Quantify achievements where possible (%, £, timeframes).
+        content: |-
+          Led high-impact engagements for FTSE 100 and Fortune 500 clients across
+          Technology, Retail, and Industrial sectors.
+
+          - Designed a £45M operational cost reduction programme for a pan-European
+            logistics provider, delivering a 22% reduction in fulfilment cycle time
+            within 18 months.
+          - Led a 12-country ERP harmonisation initiative (SAP S/4HANA), coordinating
+            a cross-functional team of 30+ and managing an £8M programme budget.
+          - Developed go-to-market strategy for a SaaS scale-up entering EMEA, resulting
+            in 3 anchor enterprise client wins within the first year.
+          - Maintained C-suite and board-level client relationships throughout all
+            engagement phases.
+
+      # ── JOB 2 ─────────────────────────────────────────────────────
+      - job: "Consultant — Digital Supply Chain"
+        company: "Technology Advisory Practice"
+        companyUrl: ""
+        date: "Jun 2018 – Feb 2021"
+        featuredLink:
+          enable: false
+        info:
+          enable: true
+          content: "Full-time | Singapore"
+        content: |-
+          Specialised in digital transformation and supply chain technology advisory
+          for manufacturing and consumer goods clients across APAC.
+
+          - Orchestrated a demand-planning digitalisation project for a global FMCG
+            company, reducing forecast error by 35% and freeing £2M in working capital.
+          - Conducted technology due diligence for a PE firm evaluating a £120M
+            acquisition target in the industrial automation space.
+          - Delivered a 6-week operating model diagnostic for an e-commerce retailer,
+            identifying £7M in annualised efficiency opportunities.
+          - Mentored 4 junior consultants; promoted to leading client-facing workstreams
+            within 12 months of joining.
+
+      # ── JOB 3 ─────────────────────────────────────────────────────
+      - job: "Business Analyst — Operations"
+        company: "Strategy & Operations Consultancy"
+        companyUrl: ""
+        date: "Aug 2015 – May 2018"
+        featuredLink:
+          enable: false
+        info:
+          enable: true
+          content: "Full-time | New Delhi, India"
+        content: |-
+          Supported engagements across Operations, Procurement, and Organisational
+          Design for mid-market clients in Financial Services and Healthcare.
+
+          - Modelled total-cost-of-ownership scenarios for a pharma distributor's 3PL
+            outsourcing decision, informing a £15M contract renegotiation.
+          - Built a supplier risk-scoring framework adopted as a firm-wide standard tool.
+          - Conducted 80+ stakeholder interviews across 6 sites as part of a post-merger
+            integration workstream for a financial services client.
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 4. KEY ENGAGEMENTS (displayed as project cards)
+  # ═══════════════════════════════════════════════════════════════════
+  #
+  # HOW TO ADD A NEW ENGAGEMENT CARD:
+  #   1. Copy one block from "      - title:" to the blank line before the next
+  #   2. Paste it below the last entry
+  #   3. Update title, content, image, and badges
+  #
+  # BADGES: Short coloured tags shown on the card.
+  # Add as many "- " lines as you need under "badges:".
+  # ═══════════════════════════════════════════════════════════════════
+  projects:
+    enable: true
+    title: "Key Engagements"
+    items:
+
+      # ── ENGAGEMENT 1 ──────────────────────────────────────────────
+      - title: "Pan-European ERP Transformation"
+        # EDIT: 2–3 sentence summary of the engagement and outcome
+        content: >
+          Led programme governance and change management for a 12-country SAP S/4HANA
+          rollout at a global industrial manufacturer. Delivered on time and 5% under
+          an £8M budget. Key outcome: unified data model across 14 business units,
+          enabling real-time group-level reporting for the first time.
+        # EDIT: Path to an image for this card.
+        # Upload images to static/images/engagements/ and update the filename.
+        # If you don't have an image yet, remove the "image:" line entirely.
+        image: /images/engagements/erp.jpg
+        featured:
+          # EDIT: Button label on the card (e.g. "View Details", "Case Study")
+          name: "View Details"
+          # EDIT: Link for the button. Use "#" if no link, or link to a PDF/page.
+          link: "#"
+        # EDIT: Short tag labels for this engagement
+        badges:
+          - "ERP / SAP"
+          - "Digital Transformation"
+          - "Programme Management"
+          - "EMEA"
+
+      # ── ENGAGEMENT 2 ──────────────────────────────────────────────
+      - title: "Supply Chain Demand-Planning Digitalisation"
+        content: >
+          Designed and implemented a demand-sensing platform for a top-10 global FMCG
+          company across 8 markets. Reduced statistical forecast error by 35%, unlocking
+          £2M in freed working capital and an 18% improvement in on-shelf availability.
+        image: /images/engagements/supply-chain.jpg
+        featured:
+          name: "View Details"
+          link: "#"
+        badges:
+          - "Supply Chain"
+          - "Demand Planning"
+          - "Analytics"
+          - "APAC"
+
+      # ── ENGAGEMENT 3 ──────────────────────────────────────────────
+      - title: "SaaS Go-to-Market Strategy — EMEA Entry"
+        content: >
+          Developed the EMEA market-entry strategy for a North American B2B SaaS provider:
+          market sizing, ICP definition, channel partnerships, and pricing architecture.
+          Resulted in 3 anchor enterprise client wins within 12 months and a Tier-1 VC
+          Series B funding round.
+        image: /images/engagements/strategy.jpg
+        featured:
+          name: "View Details"
+          link: "#"
+        badges:
+          - "Go-to-Market"
+          - "SaaS"
+          - "Growth Strategy"
+          - "EMEA"
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 5. EDUCATION & CERTIFICATIONS
+  # ═══════════════════════════════════════════════════════════════════
+  #
+  # HOW TO ADD A NEW ENTRY (degree OR certification):
+  #   Copy one block from "      - title:" to the blank line, paste below,
+  #   update the text. Certifications and degrees use the same format.
+  # ═══════════════════════════════════════════════════════════════════
+  education:
+    enable: true
+    index: false
+    items:
+
+      # ── DEGREE 1 ──────────────────────────────────────────────────
+      - title: "Master of Business Administration (MBA)"
+        school:
+          # EDIT: Your university / business school name
+          name: "Your Business School"
+          # EDIT: University website (or "" to hide the link)
+          url: ""
+        # EDIT: Year or year range
+        date: "2013 – 2015"
+        # EDIT: Grade, GPA, or distinction (or delete this line)
+        GPA: "Distinction"
+        # EDIT: Notable modules, activities, or achievements during study
+        content: |-
+          Specialisation in Strategy and Operations Management.
+
+          - Capstone: Supply chain resilience modelling for FMCG sector
+          - Dean's List, 2014–2015
+          - Consulting Club President
+
+      # ── DEGREE 2 ──────────────────────────────────────────────────
+      - title: "Bachelor of Engineering / Business (Honours)"
+        school:
+          name: "Your University"
+          url: ""
+        date: "2009 – 2013"
+        GPA: "First Class Honours"
+        content: |-
+          Dual major in Industrial Engineering and Business Administration.
+
+      # ── CERTIFICATION 1 ───────────────────────────────────────────
+      - title: "Project Management Professional (PMP)"
+        school:
+          name: "Project Management Institute (PMI)"
+          url: "https://www.pmi.org"
+        date: "2017"
+        content: |-
+          Globally recognised certification in project and programme management.
+
+      # ── CERTIFICATION 2 ───────────────────────────────────────────
+      - title: "Lean Six Sigma Black Belt"
+        school:
+          name: "IASSC / ASQ"
+          url: ""
+        date: "2019"
+        content: |-
+          Advanced certification in process improvement, waste elimination,
+          and statistical quality control methodologies.
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 6. ACHIEVEMENTS & RECOGNITION
+  # ═══════════════════════════════════════════════════════════════════
+  #
+  # HOW TO ADD A NEW ACHIEVEMENT:
+  #   Copy one block from "      - title:" to the blank line, paste below.
+  #   The "url:" line is optional — remove it if there's no public link.
+  # ═══════════════════════════════════════════════════════════════════
+  achievements:
+    enable: true
+    items:
+
+      # ── ACHIEVEMENT 1 ─────────────────────────────────────────────
+      - title: "Top Consultant of the Year — 2023"
+        # EDIT: One or two sentences describing the achievement
+        content: >
+          Recognised by firm leadership as one of the top 5% of consultants globally
+          for client impact and team development. Awarded at the annual partners' summit.
+        # EDIT: Add a URL if there's a public announcement (or remove this line)
+        url: ""
+
+      # ── ACHIEVEMENT 2 ─────────────────────────────────────────────
+      - title: "Keynote Speaker — Supply Chain Innovation Summit"
+        content: >
+          Delivered a keynote on AI-driven demand sensing and inventory optimisation
+          to 500+ delegates at an industry conference in London, 2022.
+        url: ""
+
+      # ── ACHIEVEMENT 3 ─────────────────────────────────────────────
+      - title: "Published: 'The Digital Supply Chain Playbook'"
+        content: >
+          Co-authored a practitioner's guide on digital transformation in supply chain,
+          published in Supply Chain Management Review. Cited in 3 academic papers.
+        url: ""
+
+      # ── ACHIEVEMENT 4 ─────────────────────────────────────────────
+      - title: "Certified SAP S/4HANA Associate"
+        content: >
+          SAP Certified Application Associate — Supply Chain Management with SAP S/4HANA.
+          Certified 2020. (Licence: update with your licence number)
+        url: ""
+
+
+  # ═══════════════════════════════════════════════════════════════════
+  # 7. CONTACT SECTION
+  # ═══════════════════════════════════════════════════════════════════
+  contact:
+    enable: true
+    title: "Get In Touch"
+    # EDIT: The message shown above the contact button
+    content: >
+      Whether you're exploring fit for an engagement, a full-time role, or simply
+      want to connect — I'd love to hear from you. Drop me a message and I'll get
+      back to you within 24 hours.
+
+    # EDIT: Your email address for the contact button
+    btnName: "Send me an email"
+    btnLink: "mailto:chandan.im.official@gmail.com"
+
+    # ── OPTIONAL: CONTACT FORM via Formspree (free tier) ─────────
+    # If you want a real contact form (visitor types a message on the site):
+    #   1. Go to https://formspree.io and sign up (free, no credit card)
+    #   2. Click "New Form" — you'll get a form ID like "abcdefgh"
+    #   3. Change "enable: false" to "enable: true" below
+    #   4. Replace "YOUR_FORM_ID" with your actual ID
+    formspree:
+      enable: false                # EDIT: Change to true after Formspree setup
+      formId: "YOUR_FORM_ID"      # EDIT: Your Formspree form ID
+      emailCaption: "Your email address"
+      messageCaption: "Your message"
+      messageRows: 6
+
+
+  # ─── FOOTER ──────────────────────────────────────────────────────
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false   # Set to true if you add blog posts later
+    socialNetworks:
+      # EDIT: Replace with your actual profile URLs.
+      # Remove any line you don't want shown in the footer.
+      linkedin: "https://www.linkedin.com/in/chandan-kumar-6971b0a9/"
+      # github: "https://github.com/YOUR-USERNAME"
+      # twitter: "https://twitter.com/YOUR-HANDLE"
+
+  # ─── DISPLAY SETTINGS (leave these as-is) ────────────────────────
+  listPages:
+    disableFeaturedImage: false
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: false
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
