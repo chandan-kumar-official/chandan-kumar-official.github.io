@@ -29,7 +29,7 @@ baseURL: "https://chandan-kumar-official.github.io/"
 languageCode: "en-us"
 
 # EDIT: This appears in the browser tab and search results.
-title: "Chandan Kumar | Strategy & Operations Consultant"
+title: "Chandan Kumar | Strategy & Operations Consultant | Project Manager | Product Manager | Customer Success Manager"
 
 theme: "hugo-profile"
 
@@ -93,7 +93,7 @@ Menus:
 params:
   # EDIT: Shown in search engine previews and social shares
   title: "Chandan Kumar"
-  description: "Strategy & Operations Consultant | Technology Advisory | Supply Chain Transformation"
+  description: "Strategy & Operations Consultant | Project Manager | Product Manager | Customer Success Manager"
   favicon: "/images/favicon.png"
 
   useBootstrapCDN: false
@@ -135,15 +135,15 @@ params:
     title: "Chandan Kumar"
 
     # EDIT: Your professional headline — shown directly under your name
-    subtitle: "Strategy & Operations Consultant"
+    subtitle: "Strategy & Operations Consultant | Project Manager | Product Manager | Customer Success Manager"
 
     # EDIT: A 1–2 sentence value statement.
     # The ">" means the text wraps into one paragraph — just edit the lines below.
     content: >
       I help organisations navigate complex transformations — from digital strategy
-      to operational excellence. With deep expertise in Technology Advisory and
-      Supply Chain, I turn ambiguous challenges into structured, actionable roadmaps
-      that deliver measurable results.
+      to operational excellence. As a dedicated Project Manager with 10 years of experience across business consulting, ed-tech, and recruitment sectors, I bring a strategic focus to driving transformation and organizational growth. My background includes leading the Product division at InternMart Inc., an ed-tech firm empowering high schoolers with career discovery tools and internship opportunities.
+      I am passionate about understanding business needs and audiences before suggesting solutions. While I work well independently, I thrive in collaborative environments and enjoy leveraging my knowledge to support others.
+      I hold an MBA in Marketing & HRM from Jamia Millia Islamia, New Delhi, and a B.Tech in Electronics & Instrumentation from Meerut Institute of Engineering and Technology, Meerut.
 
     # Your profile photo.
     # HOW TO ADD YOUR PHOTO:
@@ -202,10 +202,9 @@ params:
       strategy work — I don't just recommend change, I help clients build the capability
       to sustain it.
 
-      My work spans the full consulting lifecycle: opportunity identification, business
-      case development, programme design, stakeholder management, and value realisation.
-      Whether leading a global ERP rollout or redesigning a last-mile logistics network,
-      I focus on outcomes that are measurable, durable, and owned by the client.
+      My work spans the full consulting lifecycle: As a dedicated Project Manager with 9 years of experience across business consulting, ed-tech, and recruitment sectors, I bring a strategic focus to driving transformation and organizational growth. My background includes leading the Product division at InternMart Inc., an ed-tech firm empowering high schoolers with career discovery tools and internship opportunities.
+      I am passionate about understanding business needs and audiences before suggesting solutions. While I work well independently, I thrive in collaborative environments and enjoy leveraging my knowledge to support others.
+      I hold an MBA in Marketing & HRM from Jamia Millia Islamia, New Delhi, and a B.Tech in Electronics & Instrumentation from Meerut Institute of Engineering and Technology, Meerut.
 
       I am currently open to senior consulting and advisory roles across the UK, Europe,
       and internationally.
@@ -223,14 +222,13 @@ params:
         - "Operating Model Design"
         - "Digital Transformation"
         # ── Operations ────────────────────────────────────────────
-        - "Supply Chain Optimisation"
+        - "Google Project Management Certified"
         - "Process Re-engineering"
         - "Programme & Change Management"
         - "Lean / Six Sigma"
         # ── Tools & Analysis ──────────────────────────────────────
-        - "Financial Modelling (Excel / Power BI)"
-        - "Tableau & PowerPoint"
-        - "SAP / Oracle ERP Advisory"
+        - "Cerified Internal Auditor"
+        - "Excel & PowerPoint"
         - "Executive Stakeholder Communication"
 
 
